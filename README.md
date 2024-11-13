@@ -45,3 +45,5 @@ The game is designed for mobile devices, making it accessible to a wide audience
 
 ## Target Audience
 While similar games such as "Network Engineer Simulator" focus on the network theme, **NetMaster** stands out by blending network concepts with engaging gameplay, suitable for casual players and tech enthusiasts alike.
+
+- [Network Engineer Simulator on Steam](https://store.steampowered.com/app/2640920/Network_Engineer_Simulator/)
