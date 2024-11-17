@@ -9,41 +9,58 @@ Embark on a thrilling journey as a brave data packet navigating the vast and per
 ---
 
 ### 1. Players
-- The game is designed to appeal to a wide audience, allowing everyone to enjoy it even without understanding all the technical concepts.
+- The game is designed to appeal to children and adults alike, allowing everyone to enjoy it even without understanding all the technical concepts.
 - The game is a single-player experience with the addition of a leaderboard - ranking between different players based on number of objectives acheived and completion time.
 
 ### 2. Objectives
-- Shrot-term: Deliver the data packet to its destination in each level while preserving integrity (lives).
-- Mid-term: Return to previous levels to solve optional puzzles to repair broken network components for improved traversal or shortcuts, achieving new visuals and costumizations.
 
-  #### Level Design
-- Levels increase in complexity, representing different stages of a network:
-  - **Home Network** (Simple and safe for beginners).
-  - **Corporate Systems** (Mid-level with firewalls, multiple routing choices, and moderate enemies).
-  - **Data Centers** (High-level mazes with dynamic obstacles and intelligent malware).
-  - **The Internet Backbone** (Endgame with relentless challenges and multiple destinations to choose from).
-- Each stage introduces new mechanics to keep gameplay fresh.
-  
-- Long-term: Minimize delivery time for leaderboard ranking.
+- **Shrot-term**:
+  Deliver the data packet to its destination in each level while preserving integrity (lives).
+
+- **Mid-term**:
+
+  - **Different Zones Design**:
+    Levels increase in complexity, representing different stages of a network. Zone examples:
+    
+    - **Home Network** (Simple and safe for beginners).
+    - **Corporate Systems** (Mid-level with firewalls, multiple routing choices, and moderate enemies).
+    - **Data Centers** (High-level mazes with dynamic obstacles and intelligent malware).
+    - **The Internet Backbone** (Endgame with relentless challenges and multiple destinations to choose from).
+    
+    Each stage introduces new mechanics to keep gameplay fresh.
+
+  - **Optional Achievement**s:
+    Return to previous levels in order to solve optional puzzles and repair broken network components, possibly achieving new visuals and costumizations.
+     
+- **Long-term**:
+  Minimize delivery time on all levels, in order to achieve the highest ranking in the leaderboard.
 
 ### 3. Processes
-- **Starting Process**: Early levels teach the player core concepts like movement, avoiding firewalls, and routing decisions in a risk-free environment.
-- **Core Process**: The game gradually becomes more challenging, with each level introducing a new technique. For example, early levels require only running and avoiding obstacles to reach the target. In advanced levels, enemies and more challenging obstacles are introduced, requiring more effort and strategy to find the target.
-- **End Process**: The game is completed when the player finishes all levels. Players seeking more challenge can aim for the fastest possible completion time or break other players' records.
+- **Starting Processes**: Early levels teach the player core processes like movement to advance and avoid firewalls, and routing new paths by interacting with objects in the level map.
+  The player uses all of the above in order to physically get to it's marked destination in the given level.
+- **Core Process**: The game gradually becomes more challenging, with each level introducing different varying hazzards - requiring the player to time interactions with objects and move correctly, or else he loses integrity.
+  For example, early levels require running and avoiding minimal obstacles to reach the destination.
+  In advanced levels - new enemies, obstacles and interactable objects are introduced, requiring a continous learning process and more effort in strategy to complete the given task.
+- **End Process**: The game is completed when the player finishes all levels in all zones. Players seeking more challenge can aim for the fastest possible completion time or break other players' records.
 
 ### 4. Rules
-- Each level is limited, and players cannot exit it.
-- There is no map or other navigation tool, creating a challenge in finding the target.
-- The player starts with a single life, though some levels may have hidden extra lives.
-- Players learn game rules gradually through trial and error and increasing difficulty.
+- Each level is limited by borders, and the player cannot exit them.
+- Physical touch between the player and enemies/obstacles decrease his integrity, potentially losing him the level.
+- Players cannot reach interactable targets through walls, preventing level-breaking results.
+
+  Players learn game rules gradually through trial and error and increasing difficulty.
 
 ### 5. Resources
+- **Integrity**
+  - The life source of the player.
+  - Each incoming hit reduces integrity down to 0, resulting in a loss.
+  - Upgrading integrity is limited by a tight threshold, and is made by achieving rare objectives.
 - **Power-Ups & Tools**:
-  - Temporary boosts like **speed upgrades**, **shield bubbles**, or a **ping pulse** that reveals parts of the map.
-  - Usable tools like a **packet splitter** (divides the packet to explore multiple paths) or a **decryption key** (bypasses firewalls).
+  - Temporary boosts like **speed upgrades**, **shield bubbles**, etc. Not every level will offer them, and those that do require the player's strategic thinking utilizing those boosts.
+  - Usable tools like a **decryption key** to bypasses firewalls, achieved only from specific coordinations within the level map.
 - **Player Progression**:
   - Earn XP for completing levels, collecting data fragments, and achieving time-based goals.
-  - Unlock perks (e.g., faster movement, extra lives, or increased ping radius) through progression.
+  - Unlock perks both gameplay perks like extra integrity
 
 ### 6. Encounters
 The game's main encounters are environmental hazzards and enemy units. For example:
@@ -58,16 +75,18 @@ The encounters in the game are increasing in difficulty by:
 
 ### 7. Boundaries
 - **Network Navigation**: Each level is a maze-like representation of a network, with players using logic to find the shortest or safest path to the target.
+- The boundaries serve approximately half of the complexity of the game - creating movement challenges beside dangerous enemies and obstacles.
 
 ### 8. Outcomes
 - The result of each level is the time it took the player to reach the destination, depending solely on the player’s skill.
+- The player's score is portrayed on the game's leaderboard for the whole world to witness.
 
 ---
 
 ### Market Research
 
-We couldn't find a game quite like this.
-
+Puzzle solving games are commonly available in mobile game stores ("Cut the Rope" for example), though we couldn't find a game over networking in the genre.
 There are games like Network Engineer Simulator, but they only relate to the network theme, not the gameplay style.
 
+- [Cut the Rope on Google PlayStore](https://play.google.com/store/apps/details?id=com.zeptolab.ctr.ads&hl=en&pli=1)
 - [Network Engineer Simulator on Steam](https://store.steampowered.com/app/2640920/Network_Engineer_Simulator/)
