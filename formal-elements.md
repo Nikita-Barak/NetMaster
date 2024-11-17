@@ -22,7 +22,7 @@ Embark on a thrilling journey as a brave data packet navigating the vast and per
   - **Different Zones Design**:
     Levels increase in complexity, representing different stages of a network. Zone examples:
     
-    - **Home Network** (Simple and safe for beginners).
+    - **Home Network** (Simple and relatively safe for beginners).
     - **Corporate Systems** (Mid-level with firewalls, multiple routing choices, and moderate enemies).
     - **Data Centers** (High-level mazes with dynamic obstacles and intelligent malware).
     - **The Internet Backbone** (Endgame with relentless challenges and multiple destinations to choose from).
