@@ -15,7 +15,7 @@ The game is designed for mobile devices, making it accessible to a wide audience
 - **Single-player Mode**: NetMaster is designed as a single-player game with a leaderboard for tracking the fastest completion times across levels.
 
 ### Level Progression
-1. **Early Levels**: Introduce the basics, focusing on movement, jumping, overcoming simple obstacles, and reaching the destination without adversaries.
+1. **Early Levels**: Introduce the basics, focusing on movement, overcoming simple obstacles, and reaching the destination without woefull adversaries.
 2. **Advanced Levels**: Increase in complexity with new challenges, enemies, and advanced techniques. As players progress, they’ll encounter hostile elements like malware and more complex network barriers.
 
 ### Mechanics
