@@ -8,7 +8,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] Color unpressedColor;
     private SpriteRenderer buttonRenderer;
     private Collider2D buttonCollider;
-    [SerializeField] float buttonCooldown = 1.0f; 
+    [SerializeField] float buttonCooldown = 1.0f;
 
     void Start()
     {
@@ -20,7 +20,7 @@ public class ButtonController : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            if(pressed)
+            if (pressed)
             {
                 buttonRenderer.color = unpressedColor;
                 buttonCollider.enabled = false;
@@ -34,7 +34,7 @@ public class ButtonController : MonoBehaviour
                 buttonRenderer.color = pressedColor;
                 buttonCollider.enabled = true;
                 Invoke(nameof(ReEnableButton), buttonCooldown);
-                pressed = true;  
+                pressed = true;
 
                 gate.SetActive(false);
             }

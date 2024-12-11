@@ -20,20 +20,20 @@ public class DieOnCollide : MonoBehaviour
         unitAI = GetComponent<EnemyAI>();
     }
 
-    private void OnCollisionEnter2D(Collision2D other) 
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if((unitCollider.CompareTag("Player") && other.collider.CompareTag("Enemy")) || other.collider.CompareTag("Trap"))
-        { 
+        if ((unitCollider.CompareTag("Player") && other.collider.CompareTag("Enemy")) || other.collider.CompareTag("Trap"))
+        {
             if (unitAnimator != null && unitCollider != null && unitRB != null)
             {
-                unitRB.simulated = false;                
+                unitRB.simulated = false;
                 unitCollider.enabled = false;
                 unitAnimator.HandleDeath();
             }
 
-            if(unitCollider.CompareTag("Player"))
+            if (unitCollider.CompareTag("Player"))
             {
-                unitMover.enabled = false;                
+                unitMover.enabled = false;
                 Invoke(nameof(ResetScene), delay);
             }
             else

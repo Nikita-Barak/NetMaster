@@ -34,10 +34,10 @@ public class EnemyAI : MonoBehaviour
         Vector2 direction = DirectionTowardsPlayer();
         RaycastHit2D ray = Physics2D.Raycast(transform.position, direction, DistanceFromPlayer(), lineOfSightLayers);
 
-        if(ray.collider != null)
+        if (ray.collider != null)
         {
             hasLineOfSight = ray.collider.CompareTag("Player");
-            if(hasLineOfSight)
+            if (hasLineOfSight)
             {
                 Debug.DrawRay(transform.position, direction, Color.green);
             }

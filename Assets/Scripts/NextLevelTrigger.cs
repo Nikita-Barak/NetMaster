@@ -6,9 +6,9 @@ public class NextLevelTrigger : MonoBehaviour
     [SerializeField] string level;
     [SerializeField] float nextLevelDelay = 0.5f;
 
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Invoke(nameof(NextLevel), nextLevelDelay);
         }

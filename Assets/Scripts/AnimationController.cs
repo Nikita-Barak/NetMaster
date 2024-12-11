@@ -28,18 +28,18 @@ public class AnimationController : MonoBehaviour
 
     public void HandleMovement(float horizontal, float vertical, bool resetAnimation)
     {
-        if(!isDead)
+        if (!isDead)
         {
             string newAnimation;
 
             if (vertical > 0)
             {
-                if(horizontal > 0)
+                if (horizontal > 0)
                 {
                     spriter.flipX = true;
                     newAnimation = animations[2];
                 }
-                else if(horizontal < 0)
+                else if (horizontal < 0)
                 {
                     spriter.flipX = false;
                     newAnimation = animations[2];
@@ -51,12 +51,12 @@ public class AnimationController : MonoBehaviour
             }
             else if (vertical < 0)
             {
-                if(horizontal > 0)
+                if (horizontal > 0)
                 {
                     spriter.flipX = false;
                     newAnimation = animations[1];
                 }
-                else if(horizontal < 0)
+                else if (horizontal < 0)
                 {
                     spriter.flipX = true;
                     newAnimation = animations[1];
@@ -64,11 +64,11 @@ public class AnimationController : MonoBehaviour
                 else
                 {
                     newAnimation = animations[0];
-                } 
+                }
             }
             else
             {
-                if(horizontal != 0)
+                if (horizontal != 0)
                 {
                     newAnimation = animations[4];
                 }

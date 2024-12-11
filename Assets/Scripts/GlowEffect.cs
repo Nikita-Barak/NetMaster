@@ -3,11 +3,11 @@ using UnityEngine;
 public class GlowEffect : MonoBehaviour
 {
     [Tooltip("First color")]
-    [SerializeField] 
+    [SerializeField]
     Color colorA;
-    
+
     [Tooltip("Second color")]
-    [SerializeField] 
+    [SerializeField]
     Color colorB;
 
     [Tooltip("Speed of color transition")]
