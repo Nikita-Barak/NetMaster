@@ -36,12 +36,12 @@ public class AnimationController : MonoBehaviour
             {
                 if (horizontal > 0)
                 {
-                    spriter.flipX = true;
+                    spriter.flipX = false;
                     newAnimation = animations[2];
                 }
                 else if (horizontal < 0)
                 {
-                    spriter.flipX = false;
+                    spriter.flipX = true;
                     newAnimation = animations[2];
                 }
                 else
