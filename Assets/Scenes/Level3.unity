@@ -349,8 +349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 1858221667}
-  pressedColor: {r: 0, g: 0.6509434, b: 0.13274139, a: 1}
-  unpressedColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  pressedColor: {r: 0, g: 0.4339623, b: 0.08888381, a: 1}
+  unpressedColor: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 1}
   buttonCooldown: 1
 --- !u!61 &313167723
 BoxCollider2D:
@@ -844,8 +844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 872220890}
-  pressedColor: {r: 0, g: 0.6509434, b: 0.13274139, a: 1}
-  unpressedColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  pressedColor: {r: 0, g: 0.4339623, b: 0.08888381, a: 1}
+  unpressedColor: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 1}
   buttonCooldown: 1
 --- !u!61 &516548331
 BoxCollider2D:
@@ -1995,8 +1995,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 232203203}
-  pressedColor: {r: 0, g: 0.6509434, b: 0.13274139, a: 1}
-  unpressedColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  pressedColor: {r: 0, g: 0.4339623, b: 0.08888381, a: 1}
+  unpressedColor: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 1}
   buttonCooldown: 1
 --- !u!1 &996864467
 GameObject:
@@ -3034,8 +3034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 2129910788}
-  pressedColor: {r: 0, g: 0.6509434, b: 0.13274139, a: 1}
-  unpressedColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  pressedColor: {r: 0, g: 0.4339623, b: 0.08888381, a: 1}
+  unpressedColor: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 1}
   buttonCooldown: 1
 --- !u!61 &1705750231
 BoxCollider2D:
@@ -3185,8 +3185,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gate: {fileID: 842886204}
-  pressedColor: {r: 0, g: 0.6509434, b: 0.13274139, a: 1}
-  unpressedColor: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  pressedColor: {r: 0, g: 0.4339623, b: 0.08888381, a: 1}
+  unpressedColor: {r: 0.10196079, g: 0.10196079, b: 0.10196079, a: 1}
   buttonCooldown: 1
 --- !u!61 &1831132548
 BoxCollider2D:
