@@ -1,49 +1,37 @@
 # NetMaster
 
 ## Overview
-**NetMaster** is an adventure puzzle game that follows the journey of a data packet as it navigates through a vast, complex network to reach its destination. Players step into the role of the packet, maneuvering through network elements like routers, firewalls, and switches, while overcoming obstacles such as traffic loads, malware, and dead zones.
+**NetMaster** is an single-player adventure puzzle game that follows the journey of a data packet as it navigates through a vast, complex network to reach its destination. Players step into the role of the packet, maneuvering through network elements like routers, firewalls, and switches, while overcoming obstacles such as traffic loads, malware, and dead zones.
 
-The game is designed for mobile devices, making it accessible to a wide audience, even those unfamiliar with technical network concepts.
+The game is currently developed as a web-game (and aimed to later be a mobile game, making it accessible to a wide audience, even those unfamiliar with technical network concepts).
+
+---
 
 ## Gameplay
 
-### Objectives
-- Guide the data packet (player) to its destination across multiple levels with increasing difficulty.
-- The game aims to engage a broad audience, offering enjoyment regardless of the player’s technical knowledge.
-  
-### Player Experience
-- **Single-player Mode**: NetMaster is designed as a single-player game with a leaderboard for tracking the fastest completion times across levels.
+### Controls
+The player controls a packet trying to move out of the boundaries of the level, using:
+- WASD: For basic movement
+- Shift: For movement speed enhancement (currently unlimited).
 
-### Level Progression
-1. **Early Levels**: Introduce the basics, focusing on movement, overcoming simple obstacles, and reaching the destination without woefull adversaries.
-2. **Advanced Levels**: Increase in complexity with new challenges, enemies, and advanced techniques. As players progress, they’ll encounter hostile elements like malware and more complex network barriers.
+### Levels and Objectives
+Guide the data packet (player) to its destination across multiple levels with increasing difficulty.
+The game aims to engage a broad audience, offering enjoyment regardless of the player’s technical knowledge over networks.
+Current levels consist of:
 
-### Mechanics
-- Players will learn game mechanics progressively through experimentation and gradual difficulty increases.
-- Key abilities include moving, jumping, and navigating without a map, requiring careful exploration to find the destination.
+- A tutorial level - aimed to help the player have a decent understanding as to how the packet character moves and what's expected of it to progress beyond firewalls.
+- A second level - more complex and features the first enemy unit we discover.
+- A third level - an even harder level featuring many enemy units requiring different interactions with in order to progress.
 
-### Rules
-- Each level is self-contained with no escape.
-- Players have limited health (starting with a single life per level), with additional lives hidden in specific stages.
-- Double-jumping is available, but no further jumps are allowed.
+### Encounters
+The player will encounter many obstacles that will try to stop him on his way, for example:
+- Firewalls, blocking the player from further progress.
+- Enemy Viruses, chasing down the player if too close and corrupting the packet in one hit.
+- Deadzones, making entire areas non-crossable (will be added in later updates).
 
-### Resources
-- **Lives**: The primary resource, representing attempts within each level. Larger levels offer additional lives hidden throughout.
+### Where To Play
+Play the game via the [Itch.io link](https://nikita-barak.itch.io/net-master)
 
-### Challenges
-- Encounter a variety of obstacles, including:
-  - Dead zones
-  - Firewalls
-  - Traffic congestion
-  - Malware as enemies
-
-### Boundaries
-- Each level has a unique, closed world, but the packet can get "lost" if it strays too far from the objective.
-
-### Level Completion
-- The main goal of each level is to reach the destination, with completion time recorded to encourage skillful play.
-
-## Target Audience
-While similar games such as "Network Engineer Simulator" focus on the network theme, **NetMaster** stands out by blending network concepts with engaging gameplay, suitable for casual players and tech enthusiasts alike.
-
-- [Network Engineer Simulator on Steam](https://store.steampowered.com/app/2640920/Network_Engineer_Simulator/)
+### Assets:
+- [Packet and Enemies](https://rgsdev.itch.io/hand-drawn-square-characters-animated-8-directions-top-down-free-cc0)
+- [Background](https://screamingbrainstudios.itch.io/texture-grid-pack)
