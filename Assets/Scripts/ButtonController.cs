@@ -1,9 +1,11 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
     [SerializeField] GameObject gate;
     private bool pressed = false;
+    private bool onButton = false;
     [SerializeField] Color pressedColor;
     [SerializeField] Color unpressedColor;
     private SpriteRenderer buttonRenderer;
@@ -18,26 +20,32 @@ public class ButtonController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !onButton)
         {
+            onButton = true;
+
             if (pressed)
             {
-                buttonRenderer.color = unpressedColor;
-                buttonCollider.enabled = false;
-                Invoke(nameof(ReEnableButton), buttonCooldown);
                 pressed = false;
-
+                buttonRenderer.color = unpressedColor;
                 gate.SetActive(true);
             }
             else
             {
-                buttonRenderer.color = pressedColor;
-                buttonCollider.enabled = true;
-                Invoke(nameof(ReEnableButton), buttonCooldown);
                 pressed = true;
-
+                buttonRenderer.color = pressedColor;
                 gate.SetActive(false);
             }
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            onButton = false;
+            buttonCollider.enabled = false;
+            Invoke(nameof(ReEnableButton), buttonCooldown);
         }
     }
 
