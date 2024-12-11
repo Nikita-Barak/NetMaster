@@ -61,6 +61,9 @@ public class EnemyAI : MonoBehaviour
         return direction;
     }
 
+    // This method sets values for the animation controller in order to determine which animation to play based on the direction of movement towards the player.
+    // The direction vector's degree could be found in one of 8 "pizza slices", and the one slice that the degree is at determines the animation that needs to be played.
+    // For the sake of controlling the animations, assigning the values -1/0/1 and passing them to the HandleMovement() method suffices.
     void DetermineAnimation(float angle)
     {
         // Normalize angle to 0-360 range

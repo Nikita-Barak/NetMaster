@@ -26,7 +26,7 @@ public class GlowEffect : MonoBehaviour
         if (spriteRenderer != null)
         {
             float sinValue = Mathf.Sin(Time.time * glowSpeed);
-            float lerpTime = (sinValue + 1.0f) / 2.0f;
+            float lerpTime = (sinValue + 1.0f) / 2.0f; // Value calculation for the sake of smooth lerping.
             spriteRenderer.color = Color.Lerp(colorA, colorB, lerpTime);
         }
     }

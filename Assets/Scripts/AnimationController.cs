@@ -8,17 +8,6 @@ public class AnimationController : MonoBehaviour
     private string currentAnimation;
     private bool isDead = false;
 
-    private readonly List<string> animations = new List<string>
-    {
-        "Down",
-        "Down_Diag",
-        "Up_Diag",
-        "Up",
-        "Horizontal"
-    };
-
-    private readonly string death = "Death";
-
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -26,6 +15,7 @@ public class AnimationController : MonoBehaviour
         SetAnimation(animations[0], false);
     }
 
+    // The animations are 8 in number, constant and won't change. Therefore we choose specific indices that correspond to the matching animation.
     public void HandleMovement(float horizontal, float vertical, bool resetAnimation)
     {
         if (!isDead)
@@ -37,16 +27,16 @@ public class AnimationController : MonoBehaviour
                 if (horizontal > 0)
                 {
                     spriter.flipX = false;
-                    newAnimation = animations[2];
+                    newAnimation = "Up_Diag";
                 }
                 else if (horizontal < 0)
                 {
                     spriter.flipX = true;
-                    newAnimation = animations[2];
+                    newAnimation = "Up_Diag";
                 }
                 else
                 {
-                    newAnimation = animations[3];
+                    newAnimation = "Up";
                 }
             }
             else if (vertical < 0)
@@ -54,23 +44,23 @@ public class AnimationController : MonoBehaviour
                 if (horizontal > 0)
                 {
                     spriter.flipX = false;
-                    newAnimation = animations[1];
+                    newAnimation = "Down_Diag";
                 }
                 else if (horizontal < 0)
                 {
                     spriter.flipX = true;
-                    newAnimation = animations[1];
+                    newAnimation = "Down_Diag";
                 }
                 else
                 {
-                    newAnimation = animations[0];
+                    newAnimation = "Down";
                 }
             }
             else
             {
                 if (horizontal != 0)
                 {
-                    newAnimation = animations[4];
+                    newAnimation = "Horizontal";
                 }
                 else
                 {
@@ -85,7 +75,7 @@ public class AnimationController : MonoBehaviour
     public void HandleDeath()
     {
         isDead = true;
-        SetAnimation(death, false);
+        SetAnimation("Death", false);
     }
 
     public void SetAnimation(string anim, bool reset)
